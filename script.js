@@ -16,8 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Check if inputs are numbers
     if (isNaN(num1) || isNaN(num2)) {
-      alert("Please enter a number"); // Display a popup message
-      return; // Exit the function
+      alert("Please enter a number");
+      return;
     } else {
       // Perform calculation based on operator
       switch (operator) {
@@ -32,12 +32,12 @@ document.addEventListener("DOMContentLoaded", function () {
           break;
         case "/":
           if (num2 === 0) {
-            result = "Error: Cannot divide by zero";
+            result = "Error:";
           } else {
             result = divide(num1, num2);
           }
           break;
-        case "%": // Calculate percentage
+        case "%":
           result = percentage(num1, num2);
           break;
         default:
