@@ -37,6 +37,9 @@ document.addEventListener("DOMContentLoaded", function () {
             result = divide(num1, num2);
           }
           break;
+        case "%": // Calculate percentage
+          result = percentage(num1, num2);
+          break;
         default:
           result = "Error: Invalid operator";
       }
@@ -61,5 +64,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function divide(a, b) {
     return a / b;
+  }
+
+  // Calculate percentage function
+  function percentage(a, b) {
+    return (a * b) / 100;
   }
 });
